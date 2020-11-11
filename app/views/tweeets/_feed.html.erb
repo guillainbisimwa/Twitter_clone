@@ -9,7 +9,7 @@
             <%= render 'tweeets/form' %>
         </div>
     </article>
-</div>
+
 
 <% @tweeets.each do | tweeet | %>
     <div class="box">
@@ -25,8 +25,8 @@
                     <small class="">@guillain_bisimwa</small>
                     <p><%= tweeet.tweeet %></p>
                 </div>
-                <nav class="level-left is mobile">
-                    <div>
+                <nav class="level">
+                    <div class="level-left is-mobile">
                         <%= link_to tweeet, class: "level-item" do %>
                             <span class="icon"><i class="fa fa-link" arial-hidden="true"></i></span>
                         <% end %>
@@ -44,3 +44,4 @@
         </article> 
     </div> 
  <% end %>
+ </div>
